@@ -1,10 +1,9 @@
-import {combineReducers} from 'redux';
+import { combineReducers } from 'redux';
 import menuReducer from './menuReducer';
-import userReducer from './userReducer';
+import { TOGGLE_MENU } from './actions';
 
 const rootReducer = combineReducers({
   menu: menuReducer,
-  user: userReducer,
 });
 
 export default rootReducer;

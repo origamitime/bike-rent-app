@@ -1,14 +1,14 @@
 .header {
-	background-color: #000000e5;
+	background-color: #000000d3;
 	padding: 0 20px;
 	align-items: center;
-	height: 100px;
+	height: 70px;
 
 	.list {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		color: white;
 		width: 400px;
+		list-style: none;
 	}
   }

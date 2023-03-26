@@ -1,5 +1,5 @@
-import {useDispatch, useSelector} from 'react-redux';
-import {toggleMenu} from '../../../store/actions';
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleMenu } from '../../../store/actions';
 
 export const Login = () => {
   const isMenuShown = useSelector(state => state.isMenuShown);
@@ -10,15 +10,13 @@ export const Login = () => {
   };
 
   return (
-    <div>
-      <span>Войти</span>
-      <button onClick={handleMenuToggle}>Меню</button>
+      <div onClick={handleMenuToggle}>Меню
       {isMenuShown && (
         <ul>
-          <li>Войти</li>
-          <li>Зарегистрироваться</li>
+          <button>Войти</button>
+          <button>Зарегистрироваться</button>
         </ul>
       )}
-    </div>
+      </div>
   );
 };
