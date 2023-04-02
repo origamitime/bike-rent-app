@@ -1,4 +1,3 @@
-import { Login } from './Login/Login';
 import css from './Header.module.scss'
 import { Link } from 'react-router-dom';
 
@@ -12,7 +11,6 @@ export const Header = () => {
           <li><Link to="/contacts">Контакты</Link></li>
         </ul>
       </nav>
-      <Login />
     </header>
   );
 }
