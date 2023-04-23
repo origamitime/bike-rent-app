@@ -1,0 +1,111 @@
+@mixin container {
+    padding: 0 100px;
+    height: 790px;
+    background-color: #E1E5E6;
+
+    @media (max-width: 1320px) {
+        padding: 0px;
+    }
+}
+
+@mixin link-style {
+    color: white;
+    text-decoration: none;
+}
+
+@mixin header-style {
+    color: black;
+    font-size: 32px;
+
+    @media (max-width: 1320px) {
+        font-size: 24px;
+    }
+}
+
+@mixin text-style {
+    color: black;
+    font-size: 16px;
+
+    @media (max-width: 1320px) {
+        font-size: 14px;
+    }
+}
+
+@mixin button-style {
+    width: 70px;
+    height: 30px;
+    background-color: #aaaaaa;
+    border: none;
+    padding: 4px 8px;
+    color: #000000;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+@mixin button-hover {
+    background-color: #feffdbdc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+@mixin form-style {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin input-style {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    width: 250px;
+    height: 30px;
+
+    @media (max-width: 1320px) {
+        width: 200px;
+    }
+}
+
+@mixin select {
+    appearance: none;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 14px;
+    width: 250px;
+    margin-bottom: 1rem;
+
+    @media (max-width: 1320px) {
+        width: 200px;
+    }
+}
+
+@mixin table {
+    border-collapse: collapse;
+    width: 100%;
+	margin-bottom: 20px;
+
+    @media (max-width: 1320px) {
+          border-collapse: separate;
+          display: block;
+          overflow-x: auto;
+          border-spacing: 10px;
+    }
+}
+
+@mixin tableRow {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+@mixin tableHead {
+    font-weight: bold;
+    color: #333;
+}
+
+@mixin tableDate {
+    text-align: center;
+}

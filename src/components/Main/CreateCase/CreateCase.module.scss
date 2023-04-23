@@ -3,18 +3,16 @@
 
 .main {
     @include container;
-    background-color: #E1E5E6;
 
     .header {
         @include header-style;
         text-align: center;
-        padding-top: 200px;
+        padding-top: 50px;
     }
 
     .form {
         @include form-style;
-        padding-top: 50px;
-        padding-bottom: 310px;
+        padding-top: 40px;
 
         .label {
             margin-bottom: 5px; 
@@ -22,6 +20,8 @@
 
         .button {
             @include button-style;
+            width: 150px;
+            height: 30px;
             margin-top: 10px;
         }
 
@@ -36,5 +36,15 @@
         .errorMsg {
             @include text-style;
         }
+
+        .select {
+            @include select;
+        }
+    }
+
+    .msg {
+        @include text-style;
+        text-align: center;
+        padding-top: 290px;
     }
 }

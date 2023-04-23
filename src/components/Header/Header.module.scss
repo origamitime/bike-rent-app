@@ -1,14 +1,75 @@
+@import '../../styles/base.scss';
+@import '../../styles/components.scss';
+
 .header {
+	@include container;
 	background-color: #000000d3;
-	padding: 0 20px;
 	align-items: center;
 	height: 70px;
 
-	.list {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 400px;
-		list-style: none;
+	.linkMain {
+		padding: 17px 0 0 70px;
 	}
-  }
+
+	.link {
+		@include link-style;
+	}
+
+	.link:hover {
+		color: #feffdbdc;
+	}
+
+	.linksAuth {
+		margin-top: -24px;
+		margin-left: 80%;
+		width: 250px;
+		display: flex;
+		justify-content: space-between;
+
+	}
+
+	.button {
+		@include button-style;
+	}
+
+	.button:hover {
+		@include button-hover;
+	  }
+
+	.login {
+		width: 260px;
+		display: flex;
+		justify-content: space-between;
+		margin-top: -24px;
+		margin-left: 80%;
+	}
+
+	.loginSignature {
+		color: rgb(255, 255, 255);
+	}
+}
+
+@media (max-width: 1320px) {
+	.header {
+
+		.linksAuth {
+			margin-left: 20%;
+		}
+
+		.login {
+			margin-left: 20%;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.header {
+		.linkMain {
+			padding: 17px 0 0 30px;
+		}
+
+		.linksAuth {
+			width: 220px;
+		}
+	}
+}

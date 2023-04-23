@@ -1,19 +1,56 @@
+@import '../../styles/base.scss';
+@import '../../styles/components.scss';
+
 .main {
+    @include container;
     display: flex;
+
+    .picture {
+        border-radius: 50px;
+        height: 99%;
+    }
 
     .aside {
         display: block;
-        background-color: #E1E5E6;
-        width: 526px;
-        padding: 200px 50px;
+        width: 626px;
+        padding: 200px 70px;
 
         .asideHeader {
-        
+        @include header-style;
         }
     
         .asideText {
-    
+        padding: 20px 0;
+        @include text-style;
+        }
+
+        .mainLink {
+            @include link-style;
+            color: rgb(94, 3, 17);
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .mainLink:hover {
+            text-decoration: none;
+        }
+
+        .linksArea {
+            padding-top: 100px;
+            display: flex;
+            flex-direction: column;
         }
     }
+}
 
+@media screen and (max-width: 1320px) {
+    .main {
+        .picture {
+            display: none;
+        }
+
+        .asideHeader {
+            font-size: 24px;
+        }
+    }
 }

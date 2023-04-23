@@ -1,0 +1,44 @@
+@import '../../../../styles/base.scss';
+@import '../../../../styles/components.scss';
+
+.main {
+    @include container;
+
+    .header {
+        @include header-style;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .input {
+        @include input-style; 
+    }
+
+    .tableDate {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .button {
+        @include button-style;
+        width: 180px;
+        height: 30px;
+        margin-top: 10px;
+    }
+
+    .button:hover {
+        @include button-hover;
+    }
+
+    .errorMsg {
+        @include text-style;
+        color: rgb(184, 38, 38);
+    }
+
+    .msg {
+        @include text-style;
+        margin-left: 30px;
+        color: rgb(22, 99, 73);
+    }
+}

@@ -1,0 +1,53 @@
+@import '../../../styles/base.scss';
+@import '../../../styles/components.scss';
+
+.main {
+    @include container;
+
+    .header {
+        @include header-style;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    .table {
+        @include table;
+    }
+
+    .tableRow {
+        @include tableRow;
+    }
+
+    .tableHead {
+        @include tableHead;
+    }
+
+    .tableDate {
+        @include tableDate;
+    }
+
+    .button {
+        @include button-style;
+        width: 80px;
+        height: 30px;
+        margin: 5px;
+    }
+
+    .button:hover {
+        @include button-hover;
+    }
+
+    .link {
+		@include link-style;
+        color: #2f3030;
+	}
+
+	.link:hover {
+		color: #555555dc;
+	}
+
+    .errorMsg {
+        @include text-style;
+    }
+}

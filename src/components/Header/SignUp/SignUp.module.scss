@@ -1,0 +1,45 @@
+@import '../../../styles/base.scss';
+@import '../../../styles/components.scss';
+
+.main {
+    @include container;
+    background-color: #E1E5E6;
+
+    .header {
+        @include header-style;
+        text-align: center;
+        padding-top: 145px;
+    }
+
+    .form {
+        @include form-style;
+        padding-top: 40px;
+
+        .label {
+            margin-bottom: 5px; 
+        }
+
+        .button {
+            @include button-style;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            @include button-hover;
+        }
+
+        .input {
+            @include input-style; 
+        }
+
+        .errorMsg {
+            @include text-style;
+        }
+    }
+}
+
+.msg {
+    @include text-style;
+    text-align: center;
+    padding-top: 370px;
+}

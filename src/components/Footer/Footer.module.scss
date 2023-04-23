@@ -1,4 +1,31 @@
+@import '../../styles/base.scss';
+@import '../../styles/components.scss';
+
 .footer {
-    height: 100px;
+    @include container;
+    height: 70px;
     background-color: #000000d3;
+
+    .signature {
+    margin-left: 80%;
+    padding-top: 15px;
+    color: rgba(160, 160, 160, 0.973)
+    }
+
+    .link {
+		@include link-style;
+	}
+
+	.link:hover {
+		color: #feffdbdc;
+	}
+}
+
+@media screen and (max-width: 1320px) {
+  .footer {
+
+    .signature {
+      margin-left: 15%;
+      }
+    }
 }
