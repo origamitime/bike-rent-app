@@ -1,3 +1,8 @@
+# Логин и пароль
+
+Логин: heathen_rising@mail.ru 
+Пароль: 1111
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
